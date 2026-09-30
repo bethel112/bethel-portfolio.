@@ -1,0 +1,353 @@
+/* Simple Student Portfolio CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navbar */
+header {
+    background: #1a1a2e;
+    color: white;
+    padding: 15px 0;
+}
+
+.navbar {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links a:hover {
+    color: #4fc3f7;
+}
+
+/* Hero */
+.hero {
+    background: #1a1a2e;
+    color: white;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.hero .small-title {
+    color: #4fc3f7;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero h1 span {
+    color: #4fc3f7;
+}
+
+.hero h3 {
+    font-size: 20px;
+    color: #bbb;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 0 auto 25px;
+    color: #ccc;
+}
+
+.button {
+    display: inline-block;
+    background: #4fc3f7;
+    color: #1a1a2e;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background: #29b6f6;
+}
+
+/* Sections */
+.section {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 60px 0;
+}
+
+.light-section {
+    background: #e8e8e8;
+    width: 100%;
+    max-width: 100%;
+    padding: 60px 5%;
+}
+
+.light-section > * {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section h2 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.section-line {
+    width: 60px;
+    height: 3px;
+    background: #4fc3f7;
+    margin: 0 auto 30px;
+}
+
+/* About */
+.about-content {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.about-content > div:first-child {
+    flex: 2;
+    min-width: 250px;
+}
+
+.about-content h3 {
+    margin-bottom: 10px;
+    color: #1a1a2e;
+}
+
+.about-content p {
+    margin-bottom: 12px;
+    color: #555;
+}
+
+.info-box {
+    flex: 1;
+    min-width: 220px;
+    background: #1a1a2e;
+    color: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.info-box p {
+    margin-bottom: 12px;
+    color: #ddd;
+}
+
+/* Skills */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.skill {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px 30px;
+    text-align: center;
+    min-width: 160px;
+}
+
+.skill h3 {
+    font-size: 16px;
+    color: #1a1a2e;
+}
+
+/* Projects */
+.projects-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.project-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+.project-card h3 {
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: #1a1a2e;
+}
+
+.project-card p {
+    color: #555;
+    font-size: 15px;
+}
+
+/* Timeline / Education */
+.timeline {
+    max-width: 700px;
+    margin: auto;
+}
+
+.timeline-item {
+    background: white;
+    border-left: 4px solid #4fc3f7;
+    padding: 20px 25px;
+    margin-bottom: 20px;
+    border-radius: 0 8px 8px 0;
+}
+
+.timeline-item span {
+    color: #4fc3f7;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.timeline-item h3 {
+    margin: 5px 0;
+    font-size: 18px;
+}
+
+.timeline-item h4 {
+    color: #666;
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 8px;
+}
+
+.timeline-item p {
+    color: #555;
+    font-size: 15px;
+}
+
+/* Achievements */
+.achievement-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.achievement {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    text-align: center;
+}
+
+.achievement h3 {
+    margin-bottom: 10px;
+    font-size: 17px;
+    color: #1a1a2e;
+}
+
+.achievement p {
+    color: #555;
+    font-size: 14px;
+}
+
+/* Contact */
+.contact-section {
+    text-align: center;
+}
+
+.contact-details {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    max-width: 450px;
+    margin: auto;
+    text-align: left;
+}
+
+.contact-details p {
+    margin-bottom: 12px;
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background: #1a1a2e;
+    color: #aaa;
+    text-align: center;
+    padding: 25px;
+    font-size: 14px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .achievement-list {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        gap: 12px;
+        margin-top: 10px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .hero {
+        padding: 50px 15px;
+    }
+
+    .section {
+        padding: 40px 0;
+    }
+}
